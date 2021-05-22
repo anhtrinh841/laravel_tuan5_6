@@ -9,8 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    
     <style>
@@ -41,47 +40,17 @@
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Companies</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Web</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Code</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Category id</th>
-                    <th scope="col">trainers</th>
-                </tr>
-            </thead>
-            @foreach ($companies as $company)
-                <tbody>
-                    <tr>
-                        <th scope="row">{!! $company->companies_id !!}</th>
-                        <td>{!! $company->company_name !!}</td>
-                        <td>{!! $company->company_web !!}</td>
-                        <td>{!! $company->company_address !!}</td>
-                        <td>{!! $company->company_code !!}</td>
-                        <td>{!! $company->company_phone !!}</td>
-                        <td>{!! $company->category_id !!}</td>
-                        <td>{!! $company->trainers['trainers_name'] !!}</td>
-                    </tr>
-                </tbody>
+        <ol class="list-group list-group-numbered">
+            @foreach ($categories as $category)
+                <li class="list-group-item">{!!$category->category_name!!}</li>
             @endforeach
-
-        </table>
-        <div class="center">
-            {{ $companies->links() }}
-        </div>
+        </ol>
     </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
         const searchFocus = document.getElementById('search-focus');
         const keys = [{

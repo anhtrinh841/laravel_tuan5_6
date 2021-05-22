@@ -3,11 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/laravel/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
-            <file>file:/C:/wamp64/www/laravel/database/migrations/2021_04_10_030620_create_companies_table.php</file>
-            <file>file:/C:/wamp64/www/laravel/database/migrations/2019_08_19_000000_create_failed_jobs_table.php</file>
-            <file>file:/C:/wamp64/www/laravel/.env</file>
-            <file>file:/C:/wamp64/www/laravel/database/migrations/2014_10_12_000000_create_users_table.php</file>
+            <file>file:/D:/wamp64/www/week3/app/Models/User.php</file>
+            <file>file:/D:/wamp64/www/week3/database/seeders/CompanySeeder.php</file>
+            <file>file:/D:/wamp64/www/week3/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/D:/wamp64/www/week3/.env</file>
+            <file>file:/D:/wamp64/www/week3/resources/views/welcome.blade.php</file>
+            <file>file:/D:/wamp64/www/week3/routes/web.php</file>
+            <file>file:/D:/wamp64/www/week3/database/factories/UserFactory.php</file>
+            <file>file:/D:/wamp64/www/week3/app/Http/Kernel.php</file>
+            <file>file:/D:/wamp64/www/week3/routes/api.php</file>
+            <file>file:/D:/wamp64/www/week3/app/Models/Companies.php</file>
+            <file>file:/D:/wamp64/www/week3/routes/channels.php</file>
+            <file>file:/D:/wamp64/www/week3/database/seeders/TrainerSeeder.php</file>
+            <file>file:/D:/wamp64/www/week3/resources/views/companies.blade.php</file>
+            <file>file:/D:/wamp64/www/week3/app/Http/Controllers/CompaniesController.php</file>
+            <file>file:/D:/wamp64/www/week3/app/Http/Controllers/Controller.php</file>
         </group>
     </open-files>
 </project-private>

@@ -14,13 +14,10 @@ class TrainerSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=0; $i < 1000000; $i++) { 
-            DB::table('trainers')->insert([
-                'trainer_name' => "a",
-                'company_id' => "1",
-                'trainer_email' => "",
-                'trainer_phone' => "012345679",
-            ]);
+        $query = "insert into trainers values (null,?,?,?,?)";
+        for ($i = 0; $i < 400; $i++) {
+            DB::insert($query, ['tien', 1, 'tien', 'tien']);
         }
+        //
     }
 }

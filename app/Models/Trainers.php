@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Trainers extends Model
-{
+class Trainers extends Model {
+    use HasFactory;
     protected $table = 'trainers';
-    public function search($key){
-        $result = self::where('trainer_name','LIKE','%'.$key.'%')->orwhere('trainer_email','LIKE','%'.$key.'%');
-        return $result;
+    protected $primaryKey = 'trainers_id';
+
+    public function companies()
+    {
+        return $this->hasOne(Companies::class,'companies_id','companies_id');
     }
 }
