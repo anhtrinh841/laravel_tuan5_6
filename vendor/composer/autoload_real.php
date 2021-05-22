@@ -73,3 +73,4 @@ function composerRequire7f6f52e2a10169c97935caf5c54d9d8f($fileIdentifier, $file)
         $GLOBALS['__composer_autoload_files'][$fileIdentifier] = true;
     }
 }
+?>
